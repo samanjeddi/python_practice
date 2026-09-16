@@ -1,3 +1,14 @@
-a = [ 1, 2, 3, 4, 5]
-new_a = ['fard' if n%2 != 0 else 'zoj' for n in a]
-print(new_a)
+total = 0
+
+while True:
+    number = int(input("enter a number: "))
+
+    if number == 0:
+        break
+
+    elif number < 0:
+        continue
+
+    total += number
+
+print("sum:", total)
